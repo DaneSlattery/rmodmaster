@@ -4,11 +4,15 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-material-yew = { version = "0.3.0", features = ["full"] }
 # client side rendering
 yew = { version = "0.20.0", features = ["csr"] }
 
-# gloo-net = "0.6.0"
-gloo = { version = "*" }
+
+gloo-net = { version = "0.6.0", features = ["serde"] }
+gloo-console = { version = "0.3.0" }
+
 log = "0.4.22"
 yew-router = "0.17.0"
+
+
+wasm-bindgen = "0.2.95"
